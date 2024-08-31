@@ -1,0 +1,100 @@
+:root {
+  --base: #cfcfcf;
+  --text: #212121;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base: #212121;
+    --text: #cfcfcf;
+  }
+}
+
+html {
+  color-scheme: dark light;
+}
+
+.main-title {
+  text-align: center;
+}
+
+:root:has(#theme [value="Light"]:checked) {
+  color-scheme: light;
+  --base: #cfcfcf;
+  --text: #212121;
+}
+
+:root:has(#theme [value="Dark"]:checked) {
+  color-scheme: dark;
+  --base: #212121;
+  --text: #cfcfcf;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--base);
+  font-family: system-ui;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 30px;
+}
+
+.container {
+  width: auto;
+  height: 70vh;
+  padding: 10px;
+  border: none;
+  display:flex;
+  overflow-x: auto;
+  justify-content:space-around;
+  gap: 20px;
+}
+
+.sum-container {
+  width: auto;
+  height: 70vh;
+  padding: 10px;
+  border: none;
+  display:flex;
+  overflow-x: auto;
+  justify-content:space-around;
+  gap: 20px;
+}
+
+.text-box {
+  padding-bottom: 20px;
+  height: 10rem
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-container div {
+  padding: 0 10px;
+  min-width: 200px;
+}
+
+.inc-dec {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1px;
+  vertical-align: middle;
+}
+

@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 10px 0;
+}
+
+header a {
+    font-size: .8rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+#light-text,
+#dark-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* For Light Theme */
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+body.light-theme a {
+    color: black;
+}
+
+/* For Dark Theme */
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+body.dark-theme a {
+    color: white;
+}
